@@ -16,7 +16,8 @@
     <link rel="apple-touch-icon" type="image/png" href="image url">
 
     <!--FONTS-->
-
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
 
     <!--TITLE-->
     <title>Boeing - 737 MAX</title>
@@ -34,13 +35,30 @@
 
   <body>
     <main>
+      <nav class="nav_tablet">
+        <img class="boeing" src="img/boeing.png">
+        <a class="nav_item_tablet" onclick="jumpTo('')">Home</a>
+        <a class="nav_item_tablet" onclick="jumpTo('')">Statistics</a>
+        <a class="nav_item_tablet" onclick="jumpTo('')">First flight</a>
+        <a class="nav_item_tablet" onclick="jumpTo('')">Info</a>
+      </nav>
       <section class="opening">
-        <nav>
-          <a onclick="jumpTo('')">Home</a>
-          <a onclick="jumpTo('')">Statistics</a>
-          <a onclick="jumpTo('')">First flight</a>
-          <a onclick="jumpTo('')">Info</a>
-        </nav>
+        <div class="right_opening">
+          <p class="model">737</p>
+          <p class="version">MAX</p>
+          <div class="opening_button" onclick="jumpTo('info')">
+            More
+          </div>
+        </div>
+      </section>
+
+      <nav class="nav_desktop">
+        <a class="nav_item_desktop" onclick="jumpTo('')">Home</a>
+        <a class="nav_item_desktop" onclick="jumpTo('')">Statistics</a>
+        <a class="nav_item_desktop" onclick="jumpTo('')">First flight</a>
+        <a class="nav_item_desktop" onclick="jumpTo('')">Info</a>
+      </nav>
+      <section class="info">
       </section>
     </main>
 
