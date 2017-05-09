@@ -12,7 +12,7 @@ a
     max-width: 100vw;
     height: 100vh;
 }
-.nav_desktop
+.nav_desktop,.nav_tablet,.sidenav
 {
     display: none;
 }
@@ -25,9 +25,14 @@ a
 {
     position: fixed;
 }
-.nav_tablet
+.hidden
 {
     display: none;
+}
+.navfix
+{
+    height: 8vh;
+    width: 100%;
 }
 .model
 {
@@ -43,6 +48,111 @@ a
 {
     display: none;
 }
+.stats,.first_flight
+{
+    margin: 5vh 0 10vh 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.graphs
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.graph
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 4px solid deepskyblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.stat25
+{
+    border-right: 4px solid white;
+    border-left: 4px solid white;
+    border-top: 4px solid white;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.pstat25
+{
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+.stat75
+{
+    border-right: 4px solid white;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.pstat75
+{
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+.stat100
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 4px solid deepskyblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.pstat100
+{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+.percent
+{
+    font-size: 250%;
+}
+.def
+{
+    font-size: 200%;
+}
+.title
+{
+    font-size: 300%;
+    font-family: 'Poppins', sans-serif;
+}
+/*width="560" height="315"*/
+
+/* MEDIA TAGS*/
 @media(min-width:1400px)
 {
     .opening
@@ -62,6 +172,11 @@ a
         justify-content: space-around;
         align-items: center;
         box-shadow: 0 0 3px black;
+        z-index: 2;
+    }
+    .nav_item_mobileicon
+    {
+        display: none;
     }
     .nav_desktop
     {
@@ -114,6 +229,11 @@ a
         border-radius: 8px;
         box-shadow: 0 0 1px black;
         cursor: pointer;
+    }
+    .first_flight_video
+    {
+        width: 1120px;
+        height: 630px;
     }
 }
 
@@ -168,17 +288,133 @@ a
     {
         width: 80%;
     }
-    .model,.version
+    .stats,.first_flight
     {
-        /*font-weight: bold;*/
+        width: 65vw;
+        float: right;
+    }
+    .first_flight_video
+    {
+        width: 560px;
+        height: 315px;
     }
     
 }
-@media(max-width:800px)
+@media(max-width:799px)
 {
     .opening
     {
         background:#fff url('../img/opening_mobile.jpg') center center;
         background-size: cover;
+    }
+    nav
+    {
+        height: 8vh;
+        width: 100%;
+        background:#fff url('../img/sky.jpg') center center;
+        background-size: cover;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-shadow: 0 0 3px black;
+        z-index: 2;
+    }
+    .nav_desktop
+    {
+        display: flex;
+    }
+    .sidenav
+    {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        overflow-x: hidden;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        transition: 0.5s;
+    }
+    .nav_item_mobileicon
+    {
+        height: 7vh;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    .nav_item_desktop
+    {
+        display: none;
+    }
+    .right_opening
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Raleway', sans-serif;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        box-shadow: 0 -1px 2px black;
+    }
+    .upper_sidenav
+    {
+        width: 100%;
+        height: 15vh;
+    }
+    .closeButton
+    {
+        height: 4vh;
+        float: right;
+        margin-top: 5.5vh;
+        margin-right: 40px;
+    }
+    .lower_sidenav
+    {
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav_item_mobile
+    {
+        font-family: 'Poppins', sans-serif;
+        font-size: 150%;
+        margin: 10px;
+    }
+    
+    .first_flight_video
+    {
+        width: 560px;
+        height: 315px;
+    }
+}
+
+@media(max-width:560px)
+{
+    .first_flight_video
+    {
+        width: 448px;
+        height: 252px;
+    }
+}
+@media(max-width:450px)
+{
+    .first_flight_video
+    {
+        width: 358.4px;
+        height: 201.6px;
+    }
+}
+@media(max-width:360px)
+{
+    .first_flight_video
+    {
+        width: 224px;
+        height: 126px;
     }
 }
