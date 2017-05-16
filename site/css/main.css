@@ -1,11 +1,19 @@
-body,p,a
+html,body,p,a
 {
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
+}
+ul
+{
+    list-style: none;
+    margin: 0 20px;
+    padding: 0;
 }
 a
 {
     cursor: pointer;
+    text-decoration: none;
 }
 .opening
 {
@@ -15,11 +23,6 @@ a
 .nav_desktop,.nav_tablet,.sidenav
 {
     display: none;
-}
-.info
-{
-    width: 100%;
-    height: 150vh;
 }
 .stick
 {
@@ -48,7 +51,7 @@ a
 {
     display: none;
 }
-.stats,.first_flight
+.stats,.first_flight,.info
 {
     margin: 5vh 0 10vh 0;
     width: 100%;
@@ -150,7 +153,6 @@ a
     font-size: 300%;
     font-family: 'Poppins', sans-serif;
 }
-/*width="560" height="315"*/
 
 /* MEDIA TAGS*/
 @media(min-width:1400px)
@@ -235,6 +237,57 @@ a
         width: 1120px;
         height: 630px;
     }
+    .info_first,.info_second
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .info_pic
+    {
+        width: 30vw;
+    }
+    .info_text
+    {
+        width: 50vw;
+        margin: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+    footer
+    {
+        background-image: url('../img/sky.jpg');
+        background-size: cover;
+        height: 30vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_image
+    {
+        width: 20vw;
+    }
+    .footer_list_title
+    {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+    }
+    .footer_links
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+    }
+    .footer_link
+    {
+        color: black;
+        font-family: 'Poppins', sans-serif;
+    }
 }
 
 @media(min-width:800px) and  (max-width:1400px)
@@ -288,7 +341,7 @@ a
     {
         width: 80%;
     }
-    .stats,.first_flight
+    .stats,.first_flight,.info,footer
     {
         width: 65vw;
         float: right;
@@ -298,7 +351,57 @@ a
         width: 560px;
         height: 315px;
     }
-    
+    .info_first,.info_second
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .info_pic
+    {
+        width: 30%;
+    }
+    .info_text
+    {
+        font-size: 60%;
+        width: 50%;
+        margin: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+    footer
+    {
+        background-image: url('../img/sky.jpg');
+        background-size: cover;
+        height: 30vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_image
+    {
+        width: 20vw;
+    }
+    .footer_list_title
+    {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+    }
+    .footer_links
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+    }
+    .footer_link
+    {
+        color: black;
+        font-family: 'Poppins', sans-serif;
+    }
 }
 @media(max-width:799px)
 {
@@ -391,6 +494,55 @@ a
     {
         width: 560px;
         height: 315px;
+    }
+    .info_first,.info_second
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .info_pic
+    {
+        width: 90vw;
+    }
+    .info_text
+    {
+        font-size: 80%;
+        width: 90vw;
+        margin: 20px 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    footer
+    {
+        background-image: url('../img/sky.jpg');
+        background-size: cover;
+        height: 30vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_image
+    {
+        height: 20%;
+        margin-left: 50px;
+    }
+    .footer_list_title
+    {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        margin: 10px;
+    }
+    .footer_link
+    {
+        color: black;
+        font-family: 'Poppins', sans-serif;
+    }
+    .categories
+    {
+        display: none;
     }
 }
 
