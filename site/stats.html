@@ -36,7 +36,7 @@
     <main>
       <nav class="sidenav">
         <div class="upper_sidenav">
-          <img class="closeButton" src="img/x.svg" onclick="closeNav()">
+          <div class="sprite close_button" onclick="closeNav()"></div>
         </div>
         <div class="lower_sidenav">
           <a class="nav_item_mobile" href="index.html">Home</a>
@@ -45,13 +45,13 @@
         </div>
       </nav>
       <nav class="nav_tablet">
-        <img class="boeing" src="img/boeing.png">
+        <img alt="boeing" class="boeing" src="img/boeing.png">
         <a class="nav_item_tablet" href="index.html">Home</a>
         <a class="nav_item_tablet" onclick="jumpTo('stats')">Statistics</a>
         <a class="nav_item_tablet" href="pictures.html">Gallery</a>
       </nav>
       <nav class="nav_desktop_stick">
-        <img class="nav_item_mobileicon" src="img/menu_icon.png" onclick="openNav()">
+        <div class="sprite nav_item_mobileicon" onclick="openNav()"></div>
         <a class="nav_item_desktop" href="index.html">Home</a>
         <a class="nav_item_desktop" onclick="jumpTo('stats')">Statistics</a>
         <a class="nav_item_desktop" href="pictures.html">Gallery</a>
@@ -112,7 +112,7 @@
           </ul>
         </div>
 
-        <img class="footer_image" src="img/boeing.png">
+        <img alt="boeing" class="footer_image" src="img/boeing.png">
       </footer>
     </main>
 
@@ -120,6 +120,5 @@
 
   <!--SCRIPT-->
   <script src="js/main.js"></script>
-  <script src="js/jquery.js"></script>
   
 </html>

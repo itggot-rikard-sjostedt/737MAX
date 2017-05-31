@@ -44,16 +44,16 @@
     <main>
       <nav class="sidenav">
         <div class="upper_sidenav">
-          <img class="closeButton" src="img/x.svg" onclick="closeNav()">
+          <div class="sprite close_button" onclick="closeNav()"></div>
         </div>
         <div class="lower_sidenav">
           <a class="nav_item_mobile" onclick="jumpTo('opening');closeNav()">Home</a>
           <a class="nav_item_mobile" href="stats.html">Statistics</a>
-          <a class="nav_item_mobile" href="pictures.html">Galleryt</a>
+          <a class="nav_item_mobile" href="pictures.html">Gallery</a>
         </div>
       </nav>
       <nav class="nav_tablet">
-        <img class="boeing" src="img/boeing.png">
+        <img alt="boeing" class="boeing" src="img/boeing.png">
         <a class="nav_item_tablet" onclick="jumpTo('opening')">Home</a>
         <a class="nav_item_tablet" href="stats.html">Statistics</a>
         <a class="nav_item_tablet" href="pictures.html">Gallery</a>
@@ -69,7 +69,7 @@
       </section>
 
       <nav class="nav_desktop">
-        <img class="nav_item_mobileicon" src="img/menu_icon.png" onclick="openNav()">
+        <div class="sprite nav_item_mobileicon" onclick="openNav()"></div>
         <a class="nav_item_desktop" onclick="jumpTo('opening')">Home</a>
         <a class="nav_item_desktop" href="stats.html">Statistics</a>
         <a class="nav_item_desktop" href="pictures.html">Gallery</a>
@@ -112,7 +112,7 @@
       </section>
       <section class="first_flight">
         <h2 class="title">First flight</h2>
-          <iframe class="first_flight_video" src="https://www.youtube.com/embed/SAJo64MBnRI" frameborder="0" allowfullscreen></iframe>
+          <iframe class="first_flight_video" src="https://www.youtube.com/embed/SAJo64MBnRI" allowfullscreen></iframe>
       </section>
 
       <section class="info">
@@ -124,13 +124,13 @@
               <br><br>
               What's more, 737 MAX 9 enables airlines to reach farther than almost every single-aisle route they operate today. It has the longest range in its sector without the investment in any auxiliary fuel tanks, and with one auxiliary tank, matches the versatility of the 737 MAX 8 with a range of 3,515 nautical miles.
             </p>
-            <img class="info_pic" src="img/info_plane.jpg">
+            <img alt="plane" class="info_pic" src="img/info_plane.jpg">
           </div>
           <div class="info_second">
             <p class="info_text">
               With a 24-hour network and facilities around the world, Commercial Aviation Services (CAS) offers the broadest range of support products, services and integrated solutions in the aviation industry. From spare parts to pilot training, customer support to onsite technical advice, CAS helps airplane operators keep their fleets flying safely and efficiently. CAS offers an integrated suite of aviation services marketed as Boeing Support and Services. These include parts, training, engineering, maintenance and software solutions that increase the efficiency and profitability of airlines and leasing companies.
             </p>
-            <img class="info_pic" src="img/seats.jpg">
+            <img alt="seats" class="info_pic" src="img/seats.jpg">
           </div>
         </div>
       </section>
@@ -179,7 +179,7 @@
           </ul>
         </div>
 
-        <img class="footer_image" src="img/boeing.png">
+        <img alt="boeing" class="footer_image" src="img/boeing.png">
       </footer>
     </main>
 

@@ -100,12 +100,11 @@ function createStats(statistics)
     }
 }
 var slideIndex = 1;
-showDivs(slideIndex);
 
 function plusDivs(n) {
     showDivs(slideIndex += n);
 }
-beginSlideShow()
+
 
 function showDivs(n) {
     $('.previews').empty();
@@ -121,19 +120,26 @@ function showDivs(n) {
         pictures[i].style.display = "none"; 
     }
     pictures[slideIndex-1].style.display = "block";
-console.log(slideIndex)
-    j -= 1;
-    if (0 >= j) {j = previews.length - 1}
-    $(previews[j-1].outerHTML).appendTo('.previews');
+    if(slideIndex == previews.length)
+    {
+        $(previews[previews.length-2].outerHTML).appendTo('.previews');
+        $(previews[slideIndex-1].outerHTML).appendTo('.previews');
+        $(previews[0].outerHTML).appendTo('.previews');
+    }
+    else
+    {
+        j -= 1;
+        if (0 >= j) {j = previews.length - 1}
+        $(previews[j-1].outerHTML).appendTo('.previews');
 
-    j = slideIndex;
-    if (j > previews.length) {j = 1}
-    $(previews[j-1].outerHTML).appendTo('.previews');
+        j = slideIndex;
+        if (j > previews.length) {j = 1}
+        $(previews[j-1].outerHTML).appendTo('.previews');
 
-    j += 1;
-    if (j > previews.length) {j = 1}
-    $(previews[j-1].outerHTML).appendTo('.previews');
-
+        j += 1;
+        if (j > previews.length) {j = 1}
+        $(previews[j-1].outerHTML).appendTo('.previews');
+    }
 }
 
 function beginSlideShow()

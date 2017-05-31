@@ -32,11 +32,11 @@
     <meta property="og:site_name" content="Boeing - 737 MAX"/>
   </head>
 
-  <body>
+  <body onload="showDivs(slideIndex);beginSlideShow()">
     <main>
       <nav class="sidenav">
         <div class="upper_sidenav">
-          <img class="closeButton" src="img/x.svg" onclick="closeNav()">
+          <div class="sprite close_button" onclick="closeNav()"></div>
         </div>
         <div class="lower_sidenav">
           <a class="nav_item_mobile" href="index.html">Home</a>
@@ -45,13 +45,13 @@
         </div>
       </nav>
       <nav class="nav_tablet">
-        <img class="boeing" src="img/boeing.png">
+        <img alt="boeing" class="boeing" src="img/boeing.png">
         <a class="nav_item_tablet" href="index.html">Home</a>
         <a class="nav_item_tablet" href="stats.html">Statistics</a>
         <a class="nav_item_tablet" onclick="jumpTo('stats')">Gallery</a>
       </nav>
       <nav class="nav_desktop_stick">
-        <img class="nav_item_mobileicon" src="img/menu_icon.png" onclick="openNav()">
+        <div class="sprite nav_item_mobileicon" onclick="openNav()"></div>
         <a class="nav_item_desktop" href="index.html">Home</a>
         <a class="nav_item_desktop" href="stats.html">Statistics</a>
         <a class="nav_item_desktop" onclick="jumpTo('pictures')">Gallery</a>
@@ -61,22 +61,22 @@
       <section class="pictures">
           <h2 class="title">Gallery</h2>
 
-            <img class="picture" src="img/gallery-1.jpg">
-            <img class="picture" src="img/gallery-2.jpg">
-            <img class="picture" src="img/gallery-3.jpg">
-            <img class="picture" src="img/gallery-4.jpg">
-            <img class="picture" src="img/info_plane.jpg">
-            <img class="picture" src="img/mutiple_737max.jpg">
+            <img alt="gallery picture" class="picture" src="img/gallery-1.jpg">
+            <img alt="gallery picture" class="picture" src="img/gallery-2.jpg">
+            <img alt="gallery picture" class="picture" src="img/gallery-3.jpg">
+            <img alt="gallery picture" class="picture" src="img/gallery-4.jpg">
+            <img alt="gallery picture" class="picture" src="img/info_plane.jpg">
+            <img alt="gallery picture" class="picture" src="img/mutiple_737max.jpg">
 
             <div class="pic_choices">
                 <div class="arrow" onclick="plusDivs(-1)">&#10094;</div>
                 <div class="previews_hidden">
-                    <img class="preview" src="img/gallery-1.jpg">
-                    <img class="preview" src="img/gallery-2.jpg">
-                    <img class="preview" src="img/gallery-3.jpg">
-                    <img class="preview" src="img/gallery-4.jpg">
-                    <img class="preview" src="img/info_plane.jpg">
-                    <img class="preview" src="img/mutiple_737max.jpg">
+                    <img alt="preview picture" class="preview" src="img/gallery-1.jpg">
+                    <img alt="preview picture" class="preview" src="img/gallery-2.jpg">
+                    <img alt="preview picture" class="preview" src="img/gallery-3.jpg">
+                    <img alt="preview picture" class="preview" src="img/gallery-4.jpg">
+                    <img alt="preview picture" class="preview" src="img/info_plane.jpg">
+                    <img alt="preview picture" class="preview" src="img/mutiple_737max.jpg">
                 </div>
                 <div class="previews">
 
@@ -131,7 +131,7 @@
           </ul>
         </div>
 
-        <img class="footer_image" src="img/boeing.png">
+        <img alt="boeing" class="footer_image" src="img/boeing.png">
       </footer>
     </main>
 
@@ -139,6 +139,5 @@
 
   <!--SCRIPT-->
   <script src="js/main.js"></script>
-  <script src="js/jquery.js"></script>
   
 </html>
