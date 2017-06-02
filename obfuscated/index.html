@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--JQUERY-->
+    <script src="js/jquery.js"></script>
+    
+    <!--META TAGS-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="robots" content="INDEX, FOLLOW">
+
+    <!--LINKS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="apple-touch-icon" type="image/png" href="img/icon.png">
+
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+
+    <!--TITLE-->
+    <title>Boeing - 737 MAX</title>
+
+    <!--PROPERTIES-->
+    <meta name="Description" content="737 MAX"/>
+    <meta property="og:title" content="Boeing - 737 MAX"/>
+    <meta property="og:description" content="737 MAX"/>
+    <meta property="og:url" content="URL"/>
+    <meta property="og:image" content="preview image"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Boeing - 737 MAX"/>
+
+
+    <script data-cfasync="false">
+      (function(r,e,E,m,b){E[r]=E[r]||{};E[r][b]=E[r][b]||function(){
+      (E[r].q=E[r].q||[]).push(arguments)};b=m.getElementsByTagName(e)[0];m=m.createElement(e);
+      m.async=1;m.src=("file:"==location.protocol?"https:":"")+"//s.reembed.com/G-A8Dq4A.js";
+      b.parentNode.insertBefore(m,b)})("reEmbed","script",window,document,"api");
+    </script>
+  </head>
+
+  <body>
+    <main>
+      <nav class="sidenav">
+        <div class="upper_sidenav">
+          <div class="sprite close_button" onclick="closeNav()"></div>
+        </div>
+        <div class="lower_sidenav">
+          <a class="nav_item_mobile" onclick="jumpTo('opening');closeNav()">Home</a>
+          <a class="nav_item_mobile" href="stats.html">Statistics</a>
+          <a class="nav_item_mobile" href="pictures.html">Gallery</a>
+        </div>
+      </nav>
+      <nav class="nav_tablet">
+        <img alt="boeing" class="boeing" src="img/boeing.png">
+        <a class="nav_item_tablet" onclick="jumpTo('opening')">Home</a>
+        <a class="nav_item_tablet" href="stats.html">Statistics</a>
+        <a class="nav_item_tablet" href="pictures.html">Gallery</a>
+      </nav>
+      <section class="opening">
+        <div class="right_opening">
+          <p class="model">737</p>
+          <p class="version">MAX</p>
+          <div class="opening_button" onclick="jumpTo('stats')">
+            More
+          </div>
+        </div>
+      </section>
+
+      <nav class="nav_desktop">
+        <div class="sprite nav_item_mobileicon" onclick="openNav()"></div>
+        <a class="nav_item_desktop" onclick="jumpTo('opening')">Home</a>
+        <a class="nav_item_desktop" href="stats.html">Statistics</a>
+        <a class="nav_item_desktop" href="pictures.html">Gallery</a>
+      </nav>
+      <div class="navfix hidden"></div>
+      <section class="stats">
+        <h2 class="title">Statistics</h2>
+        <div class="graphs">
+          <div class="graph stat75">
+            <div class="pstat75">
+              <p class="percent">
+                75%
+              </p>
+              <p class="def">
+                  faster
+              </p>
+            </div>
+          </div>
+          <div class="graph stat100">
+              <div class="pstat100">
+                <p class="percent">
+                  100%
+                </p>
+                <p class="def">
+                    longer range
+                </p>
+              </div>
+          </div>
+          <div class="graph stat25">
+              <div class="pstat25">
+                <p class="percent">
+                  25%
+                </p>
+                <p class="def">
+                    more fuel efficient
+                </p>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="first_flight">
+        <h2 class="title">First flight</h2>
+          <iframe class="first_flight_video" src="https://www.youtube.com/embed/SAJo64MBnRI" allowfullscreen></iframe>
+      </section>
+
+      <section class="info">
+        <h2 class="title">Info</h2>
+        <div class="content">
+          <div class="info_first">
+            <p class="info_text">
+              737 MAX 9 is the perfect answer to the need for growth while maintaining maximum airline profitability. As well as 16 more seats than the incredibly popular 737 MAX 8, it offers lower trips costs than the competition,  the lowest trip costs, which minimizes the risk airlines take on as they grow.
+              <br><br>
+              What's more, 737 MAX 9 enables airlines to reach farther than almost every single-aisle route they operate today. It has the longest range in its sector without the investment in any auxiliary fuel tanks, and with one auxiliary tank, matches the versatility of the 737 MAX 8 with a range of 3,515 nautical miles.
+            </p>
+            <img alt="plane" class="info_pic" src="img/info_plane.jpg">
+          </div>
+          <div class="info_second">
+            <p class="info_text">
+              With a 24-hour network and facilities around the world, Commercial Aviation Services (CAS) offers the broadest range of support products, services and integrated solutions in the aviation industry. From spare parts to pilot training, customer support to onsite technical advice, CAS helps airplane operators keep their fleets flying safely and efficiently. CAS offers an integrated suite of aviation services marketed as Boeing Support and Services. These include parts, training, engineering, maintenance and software solutions that increase the efficiency and profitability of airlines and leasing companies.
+            </p>
+            <img alt="seats" class="info_pic" src="img/seats.jpg">
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer_links">
+          <ul class="categories">
+            <li>
+              <h3 class="footer_list_title">Categories</h3>
+            </li>
+            <li>
+              <a class="footer_link" href="http://boeing.com/commercial/">Commercial</a>
+            </li>
+            <li>
+            <a class="footer_link" href="http://boeing.com/defense/">Defense</a>
+            </li>
+            <li>
+            <a class="footer_link" href="http://boeing.com/space/">Space</a>
+            </li>
+            <li>
+            <a class="footer_link" href="http://boeing.com/innovation/">Innovation</a>
+            </li>
+            <li>
+            <a class="footer_link" href="http://boeing.com/history/index.page">Our History</a>
+            </li>
+          </ul>
+
+          <ul class="popular_links">
+            <li>
+              <h3 class="footer_list_title">Popular links</h3>
+            </li>
+            <li>
+              <a class="footer_link" href="http://boeing.com/commercial/#/orders-deliveries">Orders &amp; Deliveries</a>
+            </li>
+            <li>
+              <a class="footer_link" href="http://www.boeingblogs.com/randy/">Randy’s Journal</a>
+            </li>
+            <li>
+              <a class="footer_link" href="http://boeing.com/frontiers">Frontiers Magazine</a>
+            </li>
+            <li>
+              <a class="footer_link" href="http://boeing.com/company/tours/">Tours</a>
+            </li>
+            <li>
+              <a class="footer_link" href="http://boeing.com/principles/ethics-and-compliance.page#/speaking-up">Ethics Line</a>
+            </li>
+          </ul>
+        </div>
+
+        <img alt="boeing" class="footer_image" src="img/boeing.png">
+      </footer>
+    </main>
+
+  </body>
+
+  <!--SCRIPT-->
+  <script src="js/main.js"></script>
+  
+</html>
